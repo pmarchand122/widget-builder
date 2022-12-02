@@ -1,0 +1,45 @@
+[
+  {
+    "type": "tab",
+    "label": "Design",
+    "sections": [
+      {
+        "label": "Settings",
+        "settings": [
+          {
+            "type": "input",
+            "id": "name",
+            "label": "Name",
+            "default": "John Smith"
+          },
+          {
+            "type": "input",
+            "id": "title",
+            "label": "Title",
+            "default": "CEO"
+          },
+          {
+            "type": "imageManager",
+            "id": "imageUrl",
+            "default": {
+              "src": "http://placeimg.com/500/500/any",
+              "type": "IMAGE_MANAGER"
+            }
+          },
+          {
+            "type": "input",
+            "id": "cta_text",
+            "label": "Body",
+            "default": "Lorem ipsum"
+          },
+          {
+            "type": "input",
+            "id": "linkedIn",
+            "label": "LinkedIn URL",
+            "default": "/"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "cta_title": "sample text",
+  "cta_text": "Sample text",
+  "imageUrl": {
+    "src": "https://placeimg.com/500/500/any",
+    "type": "IMAGE_MANAGER"
+  },
+  "cta_primary": true,
+  "cta_secondary": true,
+  "cta_primary_link": "/",
+  "cta_primary_text": "Sample Link Text",
+  "cta_secondary_link": "/",
+  "cta_secondary_text": "Sample Links Text"
+}

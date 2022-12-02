@@ -1,0 +1,293 @@
+<style>
+    .kdx-team-card {
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 11px 19px rgb(78 90 100 / 10%);
+    padding: 15px;
+}
+ .kdx-team-card .card-img-top {
+	 position: relative;
+	 min-height: 142px;
+	 border-radius: 0;
+}
+ .kdx-team-card .card-img-top .card-img {
+	 position: absolute;
+	 height: 142px;
+	 width: 142px;
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 border-radius: 100%;
+	 left: 50%;
+	 top: 50%;
+	 transform: translate(-50%, -50%);
+}
+ .kdx-team-card .card-content .card-body .tm-name {
+	 color: #000;
+	 font-size: 36px;
+	 line-height: 41px;
+}
+ .kdx-team-card .card-content .card-body .tm-role {
+	 text-size: 18px;
+	 font-size: 18px;
+	 line-height: 24px;
+}
+ .kdx-team-card .card-content .card-body .detail-bio {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: flex-start;
+}
+ .kdx-team-card .card-content .card-body h3 {
+	 font-size: 20px;
+	 line-height: 24px;
+	 font-weight: 700;
+	 margin-bottom: 0px;
+}
+ .kdx-team-card .card-content .card-body h4 {
+	 font-size: 14px;
+	 line-height: 23px;
+	 text-transform: uppercase;
+	 letter-spacing: 0.35px;
+	 font-weight: 600;
+}
+ .kdx-team-card .card-content .card-body p {
+	 color: grey;
+	 font-size: 13px;
+	 line-height: 20px;
+	 margin: 5px 0px 15px 0px;
+	 padding: 0px;
+}
+ .kdx-team-card .card-content .card-body .card-footer {
+	 border-radius: 0;
+	 border: none;
+	 padding: 0px;
+}
+ .kdx-team-card .card-content .card-body .card-footer a {
+	 margin-right: 0;
+	 background-color: transparent !important;
+	 border: none;
+	 font-size: 13px;
+	 line-height: 21px;
+	 text-transform: uppercase;
+	 letter-spacing: 0.65px;
+	 font-weight: 700;
+	 text-decoration: none;
+	 transition: all 350ms linear;
+}
+ .kdx-team-card .card-content .card-body .card-footer a svg {
+	 max-height: 12px;
+	 min-height: 12px;
+	 max-width: 15px;
+	 min-width: 15px;
+	 width: 100%;
+	 transition: all 350ms linear;
+}
+ .kdx-team-card .card-content .card-body .card-footer a:hover, .kdx-team-card .card-content .card-body .card-footer a:focus {
+	 color: grey;
+}
+ .kdx-team-card .card-content .card-body .card-footer a:hover svg, .kdx-team-card .card-content .card-body .card-footer a:focus svg {
+	 fill: grey;
+	 transform: translateX(7px);
+}
+ .kdx-team-card .card-content .card-body .icon-row {
+	 margin-top: 13px;
+	 display: flex;
+	 position: relative;
+	 justify-content: center;
+}
+ .kdx-team-card .card-content .card-body .icon-row .icon {
+	 position: relative;
+	 height: 45px;
+	 width: 45px;
+	 border-radius: 100%;
+	 border: 1px solid #ccc;
+	 margin: 0px 5px;
+	 box-shadow: none;
+	 transition: all 350ms linear;
+}
+ .kdx-team-card .card-content .card-body .icon-row .icon .tm-icon svg {
+	 fill: #202b3c;
+	 color: #202b3c;
+}
+ .kdx-team-card .card-content .card-body .icon-row .icon svg {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 min-height: 15px;
+	 max-height: 15px;
+	 min-width: 15px;
+	 max-width: 15px;
+	 transition: all 350ms linear;
+}
+ .kdx-team-card .card-content .card-body .icon-row .icon:hover, .kdx-team-card .card-content .card-body .icon-row .icon:focus {
+	 box-shadow: 0px 5px 13px #b9d8f0 9D;
+	 transform: translateY(-7px);
+}
+ .kdx-team-card .card-content .card-body .icon-row .icon:hover svg, .kdx-team-card .card-content .card-body .icon-row .icon:focus svg {
+	 color: #406e90;
+	 fill: #406e90;
+}
+ .kdx-team-card.hero-card {
+	 flex-direction: row;
+}
+ .kdx-team-card.hero-card .card-img-top {
+	 max-width: 175px;
+	 min-height: 175px;
+}
+ .kdx-team-card.hero-card .card-img-top .card-img {
+	 height: 175px;
+	 width: 175px;
+}
+ .kdx-team-card.hero-card .card-content {
+	 align-items: flex-start;
+}
+ .kdx-team-card.hero-card .card-content .card-body {
+	 padding-left: 30px;
+}
+ .kdx-team-card.hero-card .card-content .card-body h1 {
+	 font-size: 42px;
+	 line-height: 49px;
+	 color: #000;
+	 font-weight: 700;
+	 text-shadow: 0px 2px 18px rgba(255, 255, 255, 0.6);
+	 margin-bottom: 5px;
+}
+ .kdx-team-card.hero-card .card-content .card-body h2 {
+	 font-size: 18px;
+	 line-height: 29px;
+	 margin-bottom: 10px;
+	 letter-spacing: 0.45px;
+	 text-align: left;
+	 padding-left: 5px;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row {
+	 justify-content: flex-start;
+	 align-items: center;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row .tm-circle {
+	 background: #fff;
+	 border: 1px solid #ccc;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row .tm-circle:hover svg, .kdx-team-card.hero-card .card-content .card-body .icon-row .tm-circle:focus svg {
+	 fill: grey;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row .tm-icon a.arrow-link {
+	 fill: #202b3c;
+	 color: #202b3c;
+	 border-bottom: 1px solid #202b3c;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row .tm-icon a.arrow-link svg {
+	 fill: #202b3c;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row a.arrow-link {
+	 margin-left: 20px;
+	 height: 26px;
+	 width: 124px;
+	 border-bottom: 1px solid #ccc;
+	 text-align: left;
+	 transition: all 150ms linear;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row a.arrow-link span {
+	 margin: 0px;
+	 position: absolute;
+	 right: 0;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row a.arrow-link span svg {
+	 transition: all 350ms linear;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row a.arrow-link:hover {
+	 color: grey;
+	 border-bottom: 1px solid grey;
+	 width: 130px;
+}
+ .kdx-team-card.hero-card .card-content .card-body .icon-row a.arrow-link:hover span svg {
+	 fill: grey;
+}
+ @media screen and (max-width: 1999.98px) {
+	 .kdx-team-card.hero-card {
+		 flex-direction: column;
+	}
+	 .kdx-team-card.hero-card .card-img-top {
+		 max-width: 100%;
+	}
+	 .kdx-team-card.hero-card .card-img-top .card-img {
+		 height: 142px;
+		 width: 142px;
+	}
+	 .kdx-team-card.hero-card .card-content {
+		 align-items: center;
+	}
+	 .kdx-team-card.hero-card .card-content .card-body {
+		 padding: 1rem 1rem;
+	}
+	 .kdx-team-card.hero-card .card-content .card-body h1, .kdx-team-card.hero-card .card-content .card-body h2, .kdx-team-card.hero-card .card-content .card-body h4 {
+		 text-align: center;
+	}
+	 .kdx-team-card.hero-card .card-content .card-body h1 {
+		 font-size: 32px;
+		 line-height: 37px;
+	}
+	 .kdx-team-card.hero-card .card-content .card-body h2 {
+		 font-size: 18px;
+		 line-height: 29px;
+	}
+	 .kdx-team-card.hero-card .card-content .card-body .icon-row {
+		 justify-content: center;
+		 flex-wrap: wrap;
+		 max-width: 200px;
+		 margin: 0 auto;
+	}
+	 .kdx-team-card.hero-card .card-content .card-body .icon-row a.arrow-link {
+		 margin-left: 0px;
+		 margin-top: 20px;
+	}
+}
+ .col .kdx-team-card {
+	 display: block;
+	 height: 100%;
+}
+ .col .kdx-team-card .kdx-team-card {
+	 height: 100%;
+}
+
+.fa-linkedin-in{
+    position: absolute;
+    top: 62%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    scale: 1.5;
+}
+.card-body{
+    text-align: center !important;
+}
+</style>
+
+<div class="kdx-team-card card team-member-card col col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card-img-top">
+        <div class="card-img" role="img" aria-label="Nick"
+            style="background-image: url(&quot;{{imageUrl.src}}&quot;);">
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="card-body detail-bio">
+            <h3>{{name}}</h3>
+
+            <h4>{{title}}</h4>
+
+            <div class="card-footer ctas">
+                <p>
+                    {{cta_text}}
+                </p>
+            </div>
+
+            <div class="icon-row">
+
+
+                <a class="icon" href="{{linkedIn}}" aria-label="Linkedin link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
