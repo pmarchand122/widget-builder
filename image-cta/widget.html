@@ -1,0 +1,262 @@
+<style>
+    .kdx-basic-cta,
+    .kdx-basic-cta__right {
+        padding: 20px 0;
+    }
+    
+
+    .kdx-basic-cta__right>.container>.row,
+    .kdx-basic-cta>.container>.row,
+    .kdx-basic-cta__right>.container>.row {
+        margin: 0 -25px;
+    }
+
+    .kdx-basic-cta__right>.container [class^='col'],
+    .kdx-basic-cta>.container [class^='col'],
+    .kdx-basic-cta__right>.container [class^='col'] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 25px;
+    }
+
+    .kdx-basic-cta__right>.container .cta-media,
+    .kdx-basic-cta>.container .cta-media,
+    .kdx-basic-cta__right>.container .cta-media {
+        position: relative;
+    }
+
+    .kdx-basic-cta__right>.container .cta-media .img,
+    .kdx-basic-cta>.container .cta-media .img,
+    .kdx-basic-cta__right>.container .cta-media .img {
+        border-radius: 5px;
+        height: 420px;
+    }
+
+    .kdx-basic-cta__right>.container .cta-media .img img,
+    .kdx-basic-cta>.container .cta-media .img img,
+    .kdx-basic-cta__right>.container .cta-media .img img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .kdx-basic-cta__right>.container .basic-cta-alt-img,
+    .kdx-basic-cta>.container .basic-cta-alt-img,
+    .kdx-basic-cta__right>.container .basic-cta-alt-img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .kdx-basic-cta__right>.container .ctas,
+    .kdx-basic-cta>.container .ctas,
+    .kdx-basic-cta__right>.container .ctas {
+        margin: 20px 0 0 0;
+    }
+
+    .kdx-basic-cta__right>.container .ctas button,
+    .kdx-basic-cta>.container .ctas button,
+    .kdx-basic-cta__right>.container .ctas button,
+    .kdx-basic-cta__right>.container .ctas a,
+    .kdx-basic-cta>.container .ctas a,
+    .kdx-basic-cta__right>.container .ctas a {
+        margin: 0 24px 10px 0;
+    }
+
+    .kdx-basic-cta__right>.container .ctas button:last-child,
+    .kdx-basic-cta>.container .ctas button:last-child,
+    .kdx-basic-cta__right>.container .ctas button:last-child,
+    .kdx-basic-cta__right>.container .ctas a:last-child,
+    .kdx-basic-cta>.container .ctas a:last-child,
+    .kdx-basic-cta__right>.container .ctas a:last-child {
+        margin: 0;
+    }
+
+    .kdx-basic-cta__right>.container>.row {
+        flex-direction: row-reverse;
+    }
+
+    .kdx-basic-cta .arrow-link__underline--animate .svg-icon,
+    .kdx-basic-cta__right .arrow-link__underline--animate .svg-icon {
+        margin: 0 0 0 10px;
+    }
+    
+    .cta-title{
+            margin: 0 0 20px 0;
+    }
+
+    @media screen and (max-width: 992px) {
+
+        .kdx-basic-cta.cta-theme-3 .cta-media,
+        .kdx-basic-cta__right.cta-theme-3 .cta-media {
+            background-size: 100% 450px !important;
+        }
+
+        .cta-title{
+            margin: 20px 0 20px 0;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+
+        .kdx-basic-cta__right>.container .ctas{
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .kdx-basic-cta__right>.container .ctas a {
+            margin: 0 0 10px 0;
+            width: max-content;
+        }
+
+       
+
+    }
+  
+
+    .kdx-basic-cta.cta-theme-1>.container>.row .cta-media .img,
+    .kdx-basic-cta__right.cta-theme-1>.container>.row .cta-media .img {
+        max-height: 420px;
+        max-width: 531px;
+        min-height: 223px;
+        min-width: 302px;
+        height: 25rem;
+        width: 100%;
+        resize: both;
+    }
+
+    .kdx-basic-cta.cta-theme-2,
+    .kdx-basic-cta__right.cta-theme-2 {
+        background-color: #f2f4f8;
+        padding: 0 77px;
+    }
+
+    .kdx-basic-cta.cta-theme-2>.container>.row .cta-media .img,
+    .kdx-basic-cta__right.cta-theme-2>.container>.row .cta-media .img {
+        border-radius: 0px;
+        height: 591px;
+    }
+
+    .kdx-basic-cta.cta-theme-3,
+    .kdx-basic-cta__right.cta-theme-3 {
+        margin: 30px 0;
+    }
+
+    .kdx-basic-cta.cta-theme-3>.container,
+    .kdx-basic-cta__right.cta-theme-3>.container {
+        margin: 0;
+        max-width: unset;
+    }
+
+    .kdx-basic-cta.cta-theme-3>.container>.row,
+    .kdx-basic-cta__right.cta-theme-3>.container>.row {
+        padding: 0 61px;
+        align-items: center;
+        background-color: red;
+    }
+
+    .kdx-basic-cta.cta-theme-3>.container>.row *,
+    .kdx-basic-cta__right.cta-theme-3>.container>.row * {
+        color: white;
+    }
+
+    .kdx-basic-cta.cta-theme-3>.container>.row .cta-media,
+    .kdx-basic-cta__right.cta-theme-3>.container>.row .cta-media {
+        align-items: center;
+        margin: 0 60px;
+    }
+
+    .kdx-basic-cta.cta-theme-3>.container>.row .cta-media .img,
+    .kdx-basic-cta__right.cta-theme-3>.container>.row .cta-media .img {
+        border-radius: 100%;
+        height: 531px;
+        max-width: 531px;
+        width: 37rem;
+    }
+
+    /* Custom Styling Below */
+    .primary-cta {
+    border-radius: {{primary_cta_border_radius.value}}px;
+    background-color: {{primary_cta_background_color}};
+    border: {{primary_cta_border_width.value}}px solid {{primary_cta_border_color}};
+    color: {{primary_cta_text_color}};
+    font-size: {{primary_cta_font_size.value}}px;
+    font-family: inherit;
+    font-weight: {{primary_cta_font_weight}};
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    text-align: center;
+    cursor: pointer;
+    }
+
+    .secondary-cta {
+    text-decoration: none;
+    border-radius: {{secondary_cta_border_radius.value}}px;
+    background-color: {{secondary_cta_background_color}};
+    border: {{secondary_cta_border_width.value}}px solid {{secondary_cta_border_color}};
+    color: {{secondary_cta_text_color}};
+    font-size: {{secondary_cta_font_size.value}}px;
+    font-family: inherit;
+    font-weight: {{secondary_cta_font_weight}};
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    text-align: center;
+    cursor: pointer;
+    }
+
+    .cta-content-text{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.75rem;
+        color: #000;
+        margin-bottom: 2rem;   
+    }
+</style>
+
+<kdx-basic-cta class="comp-load-defer hydrated" id="image-cta-{{_.id}}">
+    <article class="kdx-basic-cta__right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 cta-media">
+                   <img src="{{imageUrl.src}}"/>
+                </div>
+                <div class="col cta-content">
+                    <div class="cta-content-inner">
+                        <h2 class="cta-title">{{cta_title}}</h2>
+                        <p class="cta-content-text">
+                            {{cta_text}}
+                        </p>
+                        <div class="ctas">
+                            {{#if cta_primary}}
+                                <a class="primary-cta" href={{cta_primary_link}} id="cta-1-{{_.id}}"
+                                 rel="noopener">
+                                    {{cta_primary_text}}
+                                </a>
+                            {{/if}}
+                            {{#if cta_secondary}}
+                                <a
+                                class="secondary-cta"
+                                href={{cta_secondary_link}} id="cta-2-{{_.id}}"
+                                rel="noopener">
+                                    Second CTA Text
+                                </a>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</kdx-basic-cta>

@@ -1,0 +1,25 @@
+[
+  {
+    "type": "tab",
+    "label": "Design",
+    "sections": [
+      {
+        "label": "Accordion Settings",
+        "settings": [
+          {
+            "type": "input",
+            "id": "accordion_title",
+            "label": "Accordion Title",
+            "default": "sample text"
+          },
+          {
+            "type": "input",
+            "id": "accordion_content",
+            "label": "Accordion Content",
+            "default": "Sample text"
+          }
+        ]
+      }
+    ]
+  }
+]

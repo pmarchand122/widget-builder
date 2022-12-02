@@ -1,0 +1,108 @@
+<style>
+    .kdx-faq {
+	 background: #fff;
+	 box-shadow: 0px 6px 17px rgba(0, 61, 107, 0.1);
+	 border-radius: 6px;
+	 overflow: hidden;
+	 margin: 15px 0;
+	 transition: transform 350ms;
+}
+ .kdx-faq h3 {
+	 padding: 20px 20px 20px 40px;
+	 margin: 0;
+	 font-size: 20px;
+	 transition: all 350ms;
+	 user-select: none;
+}
+ .kdx-faq h3 .icon {
+	 display: inline-block;
+	 transition: transform 350ms;
+	 margin: -13px 13px 0 0;
+}
+ .kdx-faq h3 svg {
+	 height: 10px;
+	 width: 21px;
+	 fill: red;
+	 transform: translateY(-2px);
+}
+ .kdx-faq h3:hover, .kdx-faq h3:focus {
+	 outline: none;
+}
+ .kdx-faq h3:hover svg, .kdx-faq h3:focus svg {
+	 fill: #fff;
+}
+ .kdx-faq .kdx-faq-content {
+	 max-height: 0;
+	 overflow: hidden;
+	 transition: max-height 650ms;
+}
+ .kdx-faq .kdx-faq-content-inner {
+	 padding: 0px 20px 30px 60px;
+	 color: grey;
+}
+ .kdx-faq .kdx-faq-content-inner p {
+	 padding-bottom: 0;
+}
+ .kdx-faq .kdx-faq-content-inner p + p {
+	 padding-top: 10px;
+}
+ .kdx-faq.open {
+	 box-shadow: 0px 6px 17px rgba(185, 216, 240, 1);
+}
+ .kdx-faq.open h3 {
+	 color: grey;
+}
+ .kdx-faq.open h3 .icon {
+	 transform: rotate(90deg);
+}
+ .kdx-faq.open h3 .icon svg {
+	 fill: grey;
+}
+ .kdx-faq.open h3:hover, .kdx-faq.open h3:focus {
+	 background: none;
+	 color: grey;
+}
+ .kdx-faq.open .kdx-faq-content {
+	 max-height: 1500px;
+}
+ .kdx-faq:hover {
+	 transform: translateY(-5px);
+}
+ @media screen and (max-width: 992px) {
+	 .kdx-faq h3 {
+		 font-size: 16px;
+		 padding: 15px 10px;
+	}
+	 .kdx-faq h3 svg {
+		 height: 8px;
+		 width: 15px;
+		 fill: red;
+		 transform: translateY(0px);
+	}
+	 .kdx-faq .kdx-faq-content-inner {
+		 padding: 0px 10px 20px 30px;
+	}
+}
+ 
+</style>
+<div class="container">
+  <div class="kdx-faq" id="kdx-faq-{{_.id}}">
+    <h3 id="content-{{_.id}}" aria-label="FAQ" role="button"
+      tabindex="0"><span class="icon">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>{{accordion_title}}</h3>
+    <div class="kdx-faq-content" aria-describedby="content-{{_.id}}">
+      <div class="kdx-faq-content-inner">
+        <div>
+          {{accordion_content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.getElementById("content-{{_.id}}").addEventListener("click", function(){
+    document.getElementById("kdx-faq-{{_.id}}").classList.toggle("open");
+  })
+
+</script>
